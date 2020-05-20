@@ -12,6 +12,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to "Restaurants", restaurants_path%>
+      <span class="navbar-text">
+      -----Mega nice Restaurants-----
+      </span>
+       <%= link_to "Create", new_restaurant_path(@restaurant)%>
+    </nav>
+  </div>
+  <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
